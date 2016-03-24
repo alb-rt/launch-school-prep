@@ -1,9 +1,11 @@
 # part 1
 puts 'Hi, what is your name?'
 name = gets.chomp
+#.chomp removes the 'return key' input
 
 puts 'Hi ' + name + ', that is my mothers name!'
 puts ""
+# I kept forgetting that I needed the + signs when putting the variable in the middle of a string.
 
 # part 2
 puts 'In case you needed it, here is your name 10 times in capital letters:'
@@ -11,6 +13,7 @@ puts 'In case you needed it, here is your name 10 times in capital letters:'
 10.times do 
   puts name.upcase
 end
+# super cool! seeing how ruby is fairly intuitive in terms of syntax and being able to guess what certain things will do.
 
 # part 3
 puts ""
