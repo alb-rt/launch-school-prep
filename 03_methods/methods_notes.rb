@@ -22,3 +22,16 @@ Sometimes (or always?) we do something like this:
   where the (words) is a parameter. More on this later when I pickup from the section Default Parameters.
 
 =end
+
+# Example of a method that modifies its argument permanently
+# mutate.rb
+
+a = [1, 2, 3]
+
+def mutate(array)
+  array.pop
+end
+
+p "Before mutate method: #{a}"
+mutate(a)
+p "After mutate method: #{a}"
